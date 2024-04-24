@@ -10,8 +10,8 @@
 /* Universal Selector for box-sizing and padding/margin reset */
 * {
     box-sizing: border-box;
-    margin: 30;
-    padding: 30;
+    margin: 5px;
+    padding: 5px;
 }
 
 body {
@@ -95,7 +95,7 @@ h1 + p {
 }
 
 div.special-color {
-    background-color: var(--special-mix); /* Combining element and class selector */
+    background-color: var(--highlight-color); /* Combining element and class selector */
 }
 
 /* New Selector: :has() and Nested Selector */
