@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <title>Tianshi's Group First Brainstorm</title>
     <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        /* Internal CSS for quick experiments and inline CSS for headers */
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .navigation ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        section {
+            background: white;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Group First Brainstorm</h1>
-        <h2>Brainstorming Session</h2>
+        <h1 style="margin: 0;">Group First Brainstorm</h1>
+        <h2 style="color: #dcedc8;">Brainstorming Session</h2>
         <h3>Date: April 16, 2024</h3>
-        <a href="https://github.com/cse110-sp24-group29/cse110-sp24-group29">Our repo</a>
+        <a href="https://github.com/cse110-sp24-group29/cse110-sp24-group29" style="color: #fff;">Our repo</a>
     </header>
 
-    <div class="navigation">
+    <div class="navigation" style="background-color: #333; padding: 10px; color: #fff;">
         <h3>Navigation</h3>
         <nav>
             <ul>
+                <br>
                 <li><a href="#attendance">Attendance</a></li>
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#unfinished_business">Unfinished Business</a></li>
@@ -61,10 +106,8 @@
             <ul>
                 <li>N/A</li>
             </ul>
-
         </section>
         
-    
         <section id="new_business">
             <h2>New Business</h2>
             <p><b> 1.</b> Fill <i>When2meet</i></p>
@@ -74,13 +117,12 @@
     </main>
     
     <footer>
-        <p>Any questions or further comments can be addressed in the next meeting. <br> Please sumbmit any comment in the comment session below.</p>
+        <p>Any questions or further comments can be addressed in the next meeting. <br> Please submit any comment in the comment session below.</p>
     </footer>
 
     <section id="diagrams">
         <h2>Diagrams</h2>
-        <img src="image1.jpeg" alt="my cat" width="400" 
-        height="500">
+        <img src="image1.jpeg" alt="my cat" width="400" height="500">
     </section>
     
     <section id="recordings">
@@ -115,8 +157,8 @@
                     <option value="">--Please choose an option--</option>
                     <option value="task">Task related</option>
                     <option value="attendance">Attendance related</option>
-                    <option value="meme">meme</option>
-                    <option value="other">other</option>
+                    <option value="meme">Meme</option>
+                    <option value="other">Other</option>
                 </select><br>
                 
                 <label for="quick-topics">Quick meme Search:</label>
@@ -141,5 +183,6 @@
         <h3>This is a div element</h3>
     </div>
     <p>This is a <span style="color:blue">span</span>.</p>
+    
 </body>
 </html>

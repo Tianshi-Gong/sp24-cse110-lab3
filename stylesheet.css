@@ -1,0 +1,145 @@
+/* Extensive Comments and Variable Definitions */
+:root {
+    --main-bg-color: hsl(210, 50%, 98%); /* Using HSL */
+    --text-color: #333;
+    --link-color: rgb(0, 123, 255); /* Using RGB */
+    --highlight-color: rgba(255, 174, 0, 0.7); /* Using RGBA */
+    --special-mix: color-mix(in srgb, rgb(255, 0, 0) 50%, rgb(0, 0, 255) 50%);
+}
+
+/* Universal Selector for box-sizing and padding/margin reset */
+* {
+    box-sizing: border-box;
+    margin: 30;
+    padding: 30;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ID Selector for main content area */
+#main-content {
+    padding: 20px;
+    position: absolute; /* Example of absolute positioning */
+    top: 100px;
+    left: 10%;
+}
+
+/* Sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Element Selector for links and their hover effects */
+a {
+    color: var(--link-color);
+    text-decoration: none; /* Text Decoration */
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* Box Model - Long and Short Notation for sections */
+.section {
+    margin-top: 10px; /* Longhand notation */
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Shorthand */
+    border: 1px solid #ccc; /* Short Notation */
+    border-left-width: 4px; /* Long Notation */
+}
+
+/* Display and Positioning */
+.hidden {
+    display: none;
+}
+
+.inline-item {
+    display: inline;
+}
+
+/* Attribute Selector for input types */
+input[type="text"] {
+    background-color: #f4f4f8;
+}
+
+/* Combinators and Nested Selectors */
+.nav ul li {
+    margin-bottom: 5px; /* General sibling combinator */
+}
+
+.nav > ul > li {
+    padding: 5px 0; /* Child combinator */
+}
+
+h1 ~ p {
+    color: var(--highlight-color); /* General sibling combinator */
+}
+
+h1 + p {
+    margin-top: 10px; /* Adjacent sibling combinator */
+}
+
+div.special-color {
+    background-color: var(--special-mix); /* Combining element and class selector */
+}
+
+/* New Selector: :has() and Nested Selector */
+p:has(span) {
+    font-weight: bold; /* New :has() selector */
+}
+
+.nav li a {
+    text-decoration: none; /* Nested Selector */
+    color: #333;
+}
+
+/* Flexbox and Grid */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #333; /* Change based on condition */
+    }
+
+    .flex-container, .grid-container {
+        display: block;
+    }
+}
+
+/* Responsive and Sizing */
+.responsive-div {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+    height: auto;
+}
+
+/* Example with More Absolute Units */
+.example-measurement {
+    width: 100mm;
+    height: 10cm;
+}
